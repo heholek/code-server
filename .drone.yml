@@ -46,6 +46,7 @@ steps:
    api_key:
      from_secret: github_token
    files: release/*.tar.gz
+   draft: true
   when:
    event: tag
 
@@ -115,6 +116,7 @@ steps:
    api_key:
      from_secret: github_token
    files: release/*.tar.gz
+   draft: true
   when:
    event: tag
 
@@ -167,6 +169,7 @@ steps:
    api_key:
      from_secret: github_token
    files: release/*.tar.gz
+   draft: true
   when:
    event: tag
 
@@ -235,6 +238,7 @@ steps:
    api_key:
      from_secret: github_token
    files: release/*.tar.gz
+   draft: true
   when:
    event: tag
 
@@ -287,6 +291,7 @@ steps:
    api_key:
      from_secret: github_token
    files: release/*.tar.gz
+   draft: true
   when:
    event: tag
 
@@ -355,5 +360,6 @@ steps:
    api_key:
      from_secret: github_token
    files: release/*.tar.gz
+   draft: true
   when:
    event: tag
