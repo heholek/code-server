@@ -62,8 +62,7 @@ steps:
       - v2
       - ${DRONE_TAG}
     build_args:
-      - codeServerVersion=${DRONE_TAG}
-      - vscodeVersion=1.41.1
+      - tag=${DRONE_TAG}
   when:
     event: tag
 
@@ -184,8 +183,7 @@ steps:
       - arm64
       - ${DRONE_TAG}-arm64
     build_args:
-      - codeServerVersion=$DRONE_TAG
-      - vscodeVersion=1.41.1
+      - tag=$DRONE_TAG
   when:
     event: tag
 
@@ -306,8 +304,7 @@ steps:
       - arm
       - ${DRONE_TAG}-arm
     build_args:
-      - codeServerVersion=$DRONE_TAG
-      - vscodeVersion=1.41.1
+      - tag=$DRONE_TAG
   when:
     event: tag
 

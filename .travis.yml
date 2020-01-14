@@ -34,4 +34,4 @@ deploy:
 cache:
   yarn: true
   directories:
-    - source/vscode-1.41.1-source
+    - source
